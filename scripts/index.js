@@ -39,7 +39,9 @@ function handler(){
         } else if(select.value==='none'){
             imgContainer.style.display = 'none'; 
             description.textContent = 'Please select the planet';
+            description.classList.remove('no-overlay')
         }else{
+            imgContainer.style.display='block'
             const selectedPlanet=select.value
             const weight = parseFloat(massValue) * gravitationalAccelerations[selectedPlanet];
             console.log( `Weight on ${selectedPlanet}: ${weight.toFixed(2)} N`);
