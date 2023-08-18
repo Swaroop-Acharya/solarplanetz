@@ -41,6 +41,7 @@ function handler(){
             description.textContent = 'Please select the planet';
             description.classList.remove('no-overlay')
         }else{
+            description.textContent=''
             imgContainer.style.display='block'
             const selectedPlanet=select.value
             const weight = parseFloat(massValue) * gravitationalAccelerations[selectedPlanet];
