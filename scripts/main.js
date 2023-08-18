@@ -1,3 +1,3 @@
-import '../styles/styles.css'
-import './index'
+import '..styles/styles.css'
+import './index.js'
 
